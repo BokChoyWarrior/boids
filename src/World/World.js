@@ -43,7 +43,7 @@ class World {
         scene.add(ambientLight, directionalLight)
 
         // Boid Manager
-        const boidManager = new BoidManager(30)
+        const boidManager = new BoidManager(100)
         loop.updateableObjects.push(boidManager)
         boidManager.addBoidsToScene(scene)
 
