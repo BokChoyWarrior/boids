@@ -30,21 +30,21 @@ function createBoidsGui(settings) {
 
     folders.push(folder2, folder3, folder4)
 
-    folder2.add(settings, 'minSpeed', 0, 250, 5)
-    folder2.add(settings, 'maxSpeed', 5, 255, 5)
-    folder2.add(settings, 'maxSteerForce', 0, 50, 1)
+    folder2.add(settings, 'minSpeed', 0, 150, 5)
+    folder2.add(settings, 'maxSpeed', 5, 250, 5)
+    folder2.add(settings, 'maxSteerForce', 0, 10, 1)
 
     folder3.add(settings, 'cohereRadius', 0, 250, 5)
     folder3.add(settings, 'alignRadius', 0, 250, 5)
     folder3.add(settings, 'separateRadius', 0, 100, 2)
 
-    folder4.add(settingsNames, 'Coherence', 0, 50, 0.2)
+    folder4.add(settingsNames, 'Coherence', 0, 25, 0.2)
         .onChange(modifyCohereWeight)
-    folder4.add(settingsNames, 'Alignment', 0, 50, 0.2)
+    folder4.add(settingsNames, 'Alignment', 0, 25, 0.2)
         .onChange(modifyAlignWeight)
-    folder4.add(settingsNames, 'Separation', 0, 50, 0.2)
+    folder4.add(settingsNames, 'Separation', 0, 25, 0.2)
         .onChange(modifySeparateWeight)
-    folder4.add(settingsNames, 'Target Finding', 0, 50, 0.2)
+    folder4.add(settingsNames, 'Target Finding', 0, 25, 0.2)
         .onChange(modifyFindTargetWeight)
 
 

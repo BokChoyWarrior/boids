@@ -3,19 +3,19 @@ import { Boid } from "../components/Boid.js"
 
 const defaultSettings = {
     minSpeed: 75,
-    maxSpeed: 100,
-    maxSteerForce: 25,
+    maxSpeed: 140,
+    maxSteerForce: 6,
     target: new Vector3(),
 
-    cohereRadius: 400,
-    alignRadius: 30,
-    separateRadius: 50,
+    cohereRadius: 150,
+    alignRadius: 50,
+    separateRadius: 35,
     findTargetRadius: 1000000,
 
+    cohereWeight: 9.5,
     alignWeight: 4,
-    cohereWeight: 8,
     separateWeight: 16,
-    findTargetWeight: 3,
+    findTargetWeight: 8,
 }
 
 class BoidManager {
